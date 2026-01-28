@@ -1,0 +1,3 @@
+-- Server scripts run on the Roblox server
+-- Parent will write game logic here
+-- Examples: GameLoop, KillerLogic, SurvivorLogic

@@ -1,0 +1,28 @@
+# Argon
+.rbxlx/
+
+# Roblox Studio
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+
+# VS Code
+.vscode/
+.history/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+*.rbxlx.temp
+
+# Logs
+*.log
+
+# Blender
+*.blend1
+*.blend2
+*.blend3
+*.blend4
+*.blend5

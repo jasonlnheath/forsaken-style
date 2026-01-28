@@ -1,0 +1,21 @@
+{
+  "name": "forsaken-style",
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$path": "game/ServerScriptService"
+    },
+    "ReplicatedStorage": {
+      "$path": "game/ReplicatedStorage"
+    },
+    "StarterPlayer": {
+      "$path": "game/StarterPlayer"
+    },
+    "StarterGui": {
+      "$path": "game/StarterGui"
+    },
+    "Workspace": {
+      "$path": "game/Workspace"
+    }
+  }
+}

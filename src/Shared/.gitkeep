@@ -1,0 +1,2 @@
+-- Shared modules are available to both server and client
+-- Examples: Config, Constants, Types, utility functions

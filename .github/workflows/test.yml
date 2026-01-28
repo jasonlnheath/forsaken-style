@@ -1,0 +1,38 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Selene (Luau linter)
+        run: |
+          wget https://github.com/Kampfkarren/selene/releases/latest/download/selene-ubuntu.zip
+          unzip selene-ubuntu.zip -d selene
+
+      - name: Run Selene
+        run: ./selene/selene src/
+
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Luau
+        run: |
+          wget https://github.com/luau-lang/luau/releases/latest/download/luaufreq-ubuntu.zip
+          unzip luaufreq-ubuntu.zip -d luau
+
+      - name: Type check
+        run: |
+          ./luau/luau-analyze src/ \
+            --defs=game/ \
+            --ignore=game/ \
+            --no-strict-infer-mode
